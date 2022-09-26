@@ -1,3 +1,5 @@
+import { PollingWatchKind } from "typescript";
+
 // Navigation Bar SECTION
 const navBar = {
     show: true,
@@ -44,10 +46,10 @@ const navBar = {
   const about = {
     show: true,
     heading: "About Me",
-    imageLink: require("../editable-stuff/lucykocharian.png"),
-    imageSize: 375,
+    //imageLink: require("../editable-stuff/lucykocharian.png"),
+    //imageSize: 375,
     message:
-      "My name is Lucy Kocharian. I’m a 2023 Graduate from New York University with a degree in Computer Science and Mathematics.",
+      "My name is Lucy Kocharian. I’m a 2023 Graduate from New York University with a degree in Computer Science and Mathematics. I'm originally from Los Angeles, CA, but I'm currently living in NYC! To see what I'm into right now, look at my Skills + Interests section :) ",
     resume: require("../editable-stuff/resume.pdf"),
   };
   
@@ -59,9 +61,9 @@ const navBar = {
   const repos = {
     show: true,
     heading: "Recent Projects",
-    gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
-    reposLength: 1,
-    specificRepos: [],
+    gitHubUsername: "lkochar19", //i.e."johnDoe12Gh"
+    reposLength: 3,
+    specificRepos: ["spotifyEDA"],
   };
   
   // Leadership SECTION
@@ -72,12 +74,12 @@ const navBar = {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
     images: [
       { 
-        img: require("../editable-stuff/hashirshoaeb.png"), 
+        img: require("../editable-stuff/lucykocharian.png"), 
         label: "First slide label", 
         paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
       },
       { 
-        img: require("../editable-stuff/hashirshoaeb.png"), 
+        img: require("../editable-stuff/lucykocharian.png"), 
         label: "Second slide label", 
         paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
       },
@@ -91,26 +93,22 @@ const navBar = {
   // SKILLS SECTION
   const skills = {
     show: true,
-    heading: "Skills",
+    heading: "Skills + Interests",
     hardSkills: [
-      { name: "Python", value: 90 },
-      { name: "SQL", value: 75 },
-      { name: "Data Structures", value: 85 },
-      { name: "C/C++", value: 65 },
-      { name: "JavaScript", value: 90 },
-      { name: "React", value: 65 },
-      { name: "HTML/CSS", value: 55 },
-      { name: "C#", value: 80 },
+      { name: "Python", value: 100 },
+      { name: "SQL", value: 100 },
+      { name: "Java", value: 100 },
+      { name: "JavaScript", value: 100 },
+      { name: "HTML/CSS", value: 100 },
+      { name: "Unity/C#", value: 100 },
     ],
     softSkills: [
-      { name: "Goal-Oriented", value: 80 },
-      { name: "Collaboration", value: 90 },
-      { name: "Positivity", value: 75 },
-      { name: "Adaptability", value: 85 },
-      { name: "Problem Solving", value: 75 },
-      { name: "Empathy", value: 90 },
-      { name: "Organization", value: 70 },
-      { name: "Creativity", value: 90 },
+      { name: "Klara and the Sun, by Kazuo Ishiguro", value: 100 },
+      { name: "Iced Coconut Matcha from Kona Coffee", value: 100 },
+      { name: "Season 2 of the Kardashians", value: 100 },
+      { name: "Juniper Berry Sage candle from Sand + Fog", value: 100 },
+      { name: "Kayacking", value: 100 },
+      { name: "Nail Design", value: 100 },
     ],
   };
   
@@ -119,8 +117,8 @@ const navBar = {
     show: true,
     heading: "Get In Touch",
     message:
-      "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-    email: "hashirshoaeb@gmail.com",
+      "I'm currently looking for full-time Software Engineering, Data Analyst, or Product Management opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+    email: "kocharianlucy@gmail.com",
   };
   
   const experiences = {
@@ -129,12 +127,12 @@ const navBar = {
     data: [
       {
         role: 'Software Engineer',// Here Add Company Name
-        companylogo: require('../assets/img/dell.png'),
+        //companylogo: require('../assets/img/dell.png'),
         date: 'June 2018 – Present',
       },
       {
         role: 'Front-End Developer',
-        companylogo: require('../assets/img/boeing.png'),
+        //companylogo: require('../assets/img/boeing.png'),
         date: 'May 2017 – May 2018',
       },
     ]
